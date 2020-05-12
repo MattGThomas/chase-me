@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import { MDBCol, MDBRow, MDBBtn, MDBInput, MDBCard, MDBIcon } from "mdbreact";
+import "./contactform.css";
 
 class ContactForm extends Component {
   render() {
     return (
-      <div>
-        <p>
-          if you're looking for some work video blah blah blah <br />
-          or some pictures for graduation, weddings, etc...
-          <br /> shoot us a message and we will get right back to you
+      <div className="contact-heading">
+        <p style={{ color: "red" }}>
+          <strong>
+            if you're looking for some work video blah blah blah <br />
+            or some pictures for graduation, weddings, etc...
+            <br /> shoot us a message and we will get right back to you
+          </strong>
         </p>
         <div className="d-flex justify-content-center">
           <MDBCard style={{ width: "80%", padding: "2%" }}>
