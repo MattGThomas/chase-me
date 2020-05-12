@@ -7,7 +7,6 @@ import {
   MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
-  MDBFormInline,
   MDBDropdown,
   MDBDropdownToggle,
   MDBDropdownMenu,
@@ -63,13 +62,7 @@ class Navbar extends Component {
 
           <MDBNavbarNav right>
             <MDBNavItem>
-              <MDBIcon
-                fab
-                icon="facebook-square"
-                right
-                size="2x"
-                //   style={{ paddingRight: "3%" }}
-              />
+              <MDBIcon fab icon="facebook-square" right size="2x" />
             </MDBNavItem>
             <MDBNavItem>
               <MDBIcon fab icon="twitter-square" right size="2x" />
@@ -80,21 +73,6 @@ class Navbar extends Component {
             <MDBNavItem>
               <MDBIcon fab icon="youtube-square" right size="2x" />
             </MDBNavItem>
-
-            {/* <MDBNavbarNav right>
-            <MDBNavItem>
-              <MDBFormInline waves>
-                <div className="md-form my-0">
-                  <input
-                    className="form-control mr-sm-2"
-                    type="text"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                </div>
-              </MDBFormInline>
-            </MDBNavItem>
-          </MDBNavbarNav> */}
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
