@@ -1,16 +1,16 @@
-ul {
+/* ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 .carousel-container {
   padding-top: 30%;
-  /* background: black; */
+  /* background: black; 
 }
 .carousel__arrow {
   position: absolute;
   top: 50%;
-  display: block;
+  /* display: block; 
   color: #111;
   cursor: pointer;
   opacity: 0.75;
@@ -44,7 +44,7 @@ ul {
 
   /* &--active {
       display: block;
-    } */
+    } 
 }
 .carousel__slide--active {
   display: block;
@@ -52,7 +52,7 @@ ul {
 .carousel {
   position: relative;
   /* background: black;
-  border: 1px solid red; */
+  border: 1px solid red; 
 }
 
 .carousel__indicators {
@@ -79,4 +79,4 @@ ul {
 .carousel__indicator--active,
 .carousel__indicator--active:hover {
   opacity: 0.75;
-}
+} */

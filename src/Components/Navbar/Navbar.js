@@ -13,7 +13,7 @@ import {
   MDBDropdownItem,
   MDBIcon,
 } from "mdbreact";
-import logo from "../../images/reg-pics/IMG_3070.PNG";
+// import logo from "../../images/reg-pics/IMG_3070.PNG";
 
 class Navbar extends Component {
   state = {
@@ -26,10 +26,14 @@ class Navbar extends Component {
   };
   render() {
     return (
-      <MDBNavbar color="white" light expand="md" scrolling fixed="top">
+      <MDBNavbar color="red" light expand="md" scrolling fixed="top">
         <MDBNavbarBrand>
-          <img src={logo} height="25px" width="25px" alt="logo" />
-          <strong className="black-text">Chase Me If You Can</strong>
+          {/* <img src={logo} height="25px" width="25px" alt="logo" /> */}
+          {/* <p> */}
+          <div>
+            <strong className="black-text">Chase Me If You Can</strong>
+          </div>
+          {/* </p> */}
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggle} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
@@ -75,7 +79,7 @@ class Navbar extends Component {
                 icon="facebook-square"
                 right
                 size="2x"
-                style={{ color: "#ff9e0d" }}
+                style={{ color: "black" }}
               />
             </MDBNavItem>
             <MDBNavItem>
@@ -89,7 +93,7 @@ class Navbar extends Component {
                   icon="twitter-square"
                   right
                   size="2x"
-                  style={{ color: "#ff9e0d" }}
+                  style={{ color: "black" }}
                 />
               </a>
             </MDBNavItem>
@@ -99,7 +103,7 @@ class Navbar extends Component {
                 icon="instagram"
                 right
                 size="2x"
-                style={{ color: "#ff9e0d" }}
+                style={{ color: "black" }}
               />
             </MDBNavItem>
             <MDBNavItem>
@@ -113,7 +117,7 @@ class Navbar extends Component {
                   icon="youtube-square"
                   right
                   size="2x"
-                  style={{ color: "#ff9e0d" }}
+                  style={{ color: "black" }}
                 />
               </a>
             </MDBNavItem>

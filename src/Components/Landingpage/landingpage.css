@@ -1,3 +1,32 @@
 /* .landing-container {
   background-image: url(../../images/reg-pics/IMG_3070.PNG);
 } */
+
+.landing-header {
+  font-family: "Cookie", cursive;
+  font-size: 2.4rem;
+  padding-top: "7%";
+  /* color: #808080; */
+}
+
+.landing-subtext {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  color: #808080;
+}
+.landing-div {
+  padding-top: 7%;
+}
+.landing-video-text {
+  color: #808080;
+  font-family: "Playfair Display", serif;
+}
+@media (max-width: 450px) {
+  .landing-div {
+    padding-top: 20%;
+  }
+  .landing-videos {
+    display: flex;
+    flex-direction: column;
+  }
+}
