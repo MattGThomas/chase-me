@@ -1,5 +1,6 @@
 .contact-heading {
   padding-top: 7%;
+  justify-content: center;
 }
 @media (max-width: 1024px) {
   .contact-heading {
@@ -14,5 +15,11 @@
 @media (max-width: 450px) {
   .contact-heading {
     padding-top: 17%;
+  }
+  .dempseys-pic {
+    padding-bottom: 5%;
+  }
+  .contact-form {
+    flex-direction: column;
   }
 }

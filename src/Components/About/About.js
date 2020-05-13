@@ -6,7 +6,7 @@ import "./about.css";
 const About = (props) => {
   return (
     <div className="about-spacing">
-      <MDBContainer style={{ color: "black", fontSize: "1.2rem" }}>
+      <MDBContainer style={{ fontSize: "1.2rem" }}>
         <MDBRow className="about-content">
           <MDBCol>
             <img
@@ -18,7 +18,7 @@ const About = (props) => {
           </MDBCol>
           <MDBCol className="text-left">
             <strong>
-              <p>
+              <p style={{ color: "#F9AB39" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                 lectus enim, efficitur ac finibus hendrerit, elementum quis leo.
                 Proin convallis ornare tortor. Vestibulum aliquet libero sed
@@ -48,10 +48,10 @@ const About = (props) => {
           </MDBCol>
         </MDBRow>
         <MDBRow>
-          <h2>
+          <p>
             Insert pictures of some favorite topics here? banner style, slides
             across screen
-          </h2>
+          </p>
         </MDBRow>
       </MDBContainer>
     </div>

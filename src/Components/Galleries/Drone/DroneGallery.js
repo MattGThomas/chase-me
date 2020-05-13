@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import droneBackground from "../../../images/drone-pics/Drone_Reel_1.mpg";
+// import droneBackground from "../../../images/reg-pics/Drone_Reel_1.mp4";
 class DroneGallery extends Component {
   //   state = {
   //     videoBackground: "",
   //   };
   render() {
     return (
-      <video loop autoPlay>
-        <source src={droneBackground} type="video/mp4" />
-      </video>
+      <div>
+        <h2>Pictures and Videos from the Drone</h2>
+      </div>
     );
   }
 }

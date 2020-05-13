@@ -13,6 +13,7 @@ import {
   MDBDropdownItem,
   MDBIcon,
 } from "mdbreact";
+import logo from "../../images/reg-pics/IMG_3070.PNG";
 
 class Navbar extends Component {
   state = {
@@ -25,23 +26,30 @@ class Navbar extends Component {
   };
   render() {
     return (
-      <MDBNavbar color="blue" dark expand="md" scrolling fixed="top">
+      <MDBNavbar color="white" light expand="md" scrolling fixed="top">
         <MDBNavbarBrand>
-          <strong className="white-text">Chase Me If You Can</strong>
+          <img src={logo} height="25px" width="25px" alt="logo" />
+          <strong className="black-text">Chase Me If You Can</strong>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggle} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
             <MDBNavItem active>
-              <MDBNavLink to="/">Home</MDBNavLink>
+              <MDBNavLink to="/" style={{ color: "black" }}>
+                Home
+              </MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/about">About</MDBNavLink>
+              <MDBNavLink to="/about" style={{ color: "black" }}>
+                About
+              </MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
-                  <span className="mr-2">Galleries</span>
+                  <span className="mr-2" style={{ color: "black" }}>
+                    Galleries
+                  </span>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                   <MDBDropdownItem href="#!">
@@ -54,7 +62,9 @@ class Navbar extends Component {
               </MDBDropdown>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/contact-us">Contact Us</MDBNavLink>
+              <MDBNavLink to="/contact-us" style={{ color: "black" }}>
+                Contact Us
+              </MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
 
@@ -65,17 +75,23 @@ class Navbar extends Component {
                 icon="facebook-square"
                 right
                 size="2x"
-                style={{ color: "black" }}
+                style={{ color: "#ff9e0d" }}
               />
             </MDBNavItem>
             <MDBNavItem>
-              <MDBIcon
-                fab
-                icon="twitter-square"
-                right
-                size="2x"
-                style={{ color: "black" }}
-              />
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/ChasertheEraser"
+              >
+                <MDBIcon
+                  fab
+                  icon="twitter-square"
+                  right
+                  size="2x"
+                  style={{ color: "#ff9e0d" }}
+                />
+              </a>
             </MDBNavItem>
             <MDBNavItem>
               <MDBIcon
@@ -83,7 +99,7 @@ class Navbar extends Component {
                 icon="instagram"
                 right
                 size="2x"
-                style={{ color: "black" }}
+                style={{ color: "#ff9e0d" }}
               />
             </MDBNavItem>
             <MDBNavItem>
@@ -97,7 +113,7 @@ class Navbar extends Component {
                   icon="youtube-square"
                   right
                   size="2x"
-                  style={{ color: "black" }}
+                  style={{ color: "#ff9e0d" }}
                 />
               </a>
             </MDBNavItem>
