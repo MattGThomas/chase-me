@@ -1,6 +1,17 @@
 .about-spacing {
   padding-top: 7%;
 }
+.about-header {
+  font-family: "Cookie", cursive;
+  font-size: 4.6rem;
+  color: #f44336;
+}
+.text-left {
+  font-family: "Playfair Display", serif;
+}
+.about-pics {
+  width: 50%;
+}
 @media (max-width: 1024px) {
   .about-spacing {
     padding-top: 7%;
@@ -17,5 +28,8 @@
   }
   .about-content {
     flex-direction: column;
+  }
+  .about-pics {
+    width: 100%;
   }
 }

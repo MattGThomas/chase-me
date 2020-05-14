@@ -62,16 +62,14 @@ class Navbar extends Component {
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
                   <span className="mr-2 nav-items" style={{ color: "black" }}>
-                    Galleries
+                    My Work
                   </span>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem href="#!">
-                    Birthdays / Weddings
-                  </MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Drong Shots</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Sports</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Graduation</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Drone</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Videos</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Pictures</MDBDropdownItem>
+                  <MDBDropdownItem href="/hero-101">Hero 101</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>

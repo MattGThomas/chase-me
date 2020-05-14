@@ -6,19 +6,33 @@ import "./about.css";
 const About = (props) => {
   return (
     <div className="about-spacing">
-      <MDBContainer style={{ fontSize: "1.2rem" }}>
+      <MDBContainer style={{ fontSize: "1.2rem", color: "#bfbfbf" }}>
+        <h2 className="about-header">Meet the Man Behind The Camera</h2>
         <MDBRow className="about-content">
-          <MDBCol>
-            <img
+          {/* <h2>Meet the man behind the camera</h2> */}
+          {/* <MDBCol> */}
+          {/* <img
               src={drone_chase}
               alt="Chase with drone pic"
               width="80%"
               //   height="80%"
+              style={{ paddingBottom: "10%" }}
+            /> */}
+          {/* <div style={{ marginRight: "3%" }}> */}
+          <div className="about-pics">
+            <img
+              src="https://placedog.net/800/640?id=7"
+              alt=""
+              width="80%"
+              style={{ paddingBottom: "4%" }}
             />
-          </MDBCol>
+            {/* </div> */}
+            <img src="https://placedog.net/800/640?id=3" alt="" width="80%" />
+          </div>
+          {/* </MDBCol> */}
           <MDBCol className="text-left">
             <strong>
-              <p style={{ color: "#F9AB39" }}>
+              <p style={{ color: "#bfbfbf" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                 lectus enim, efficitur ac finibus hendrerit, elementum quis leo.
                 Proin convallis ornare tortor. Vestibulum aliquet libero sed
@@ -47,12 +61,12 @@ const About = (props) => {
             </strong>
           </MDBCol>
         </MDBRow>
-        <MDBRow>
+        {/* <MDBRow>
           <p>
             Insert pictures of some favorite topics here? banner style, slides
             across screen
           </p>
-        </MDBRow>
+        </MDBRow> */}
       </MDBContainer>
     </div>
   );

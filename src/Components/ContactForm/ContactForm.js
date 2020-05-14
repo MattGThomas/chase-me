@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Axios from "axios";
 import {
   MDBCol,
   MDBRow,
@@ -14,6 +15,17 @@ import dempseys from "../../images/reg-pics/dempseys.JPG";
 import "./contactform.css";
 
 class ContactForm extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      firstName: "",
+      lastName: "",
+      phoneNumber: "",
+      message: "",
+      email: "",
+    };
+  }
+  submit = (evt) => {};
   render() {
     return (
       <div className="contact-heading">

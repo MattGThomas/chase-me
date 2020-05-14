@@ -3,7 +3,10 @@ import { MDBContainer, MDBRow, MDBFooter, MDBIcon } from "mdbreact";
 
 const Footer = () => {
   return (
-    <MDBFooter color="#0A0A0A" style={{ paddingBottom: "3%" }}>
+    <MDBFooter
+      color="#0A0A0A"
+      style={{ paddingTop: "3%", paddingBottom: "3%" }}
+    >
       <MDBContainer fluid className="text-center">
         <MDBRow style={{ justifyContent: "space-between", padding: "0 15%" }}>
           <MDBIcon

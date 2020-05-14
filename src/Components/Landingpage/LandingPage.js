@@ -9,6 +9,9 @@ import dempseys from "../../images/reg-pics/dempseys.JPG";
 import chase from "../../images/drone-pics/chase.JPG";
 import baseball from "../../images/reg-pics/baseball.JPG";
 import party from "../../images/reg-pics/party.JPG";
+import YouTube from "react-youtube";
+import Roll from "react-reveal/Roll";
+import Fade from "react-reveal/Fade";
 import "./landingpage.css";
 // import { MDBInput } from "mdbreact";
 
@@ -41,6 +44,10 @@ import "./landingpage.css";
 // ];
 class LandingPage extends Component {
   render() {
+    // object for ReactYoutube component, takes info like width for video
+    const opts = {
+      width: "100%",
+    };
     return (
       <div>
         <div style={{ color: "#f44336" }} className="landing-div">
@@ -53,47 +60,58 @@ class LandingPage extends Component {
           <MDBContainer>
             <MDBRow className="landing-videos">
               <MDBCol>
-                <div>
-                  <span className="landing-video-text">
-                    lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
-                  </span>
-                  <ReactPlayer
-                    url="https://www.youtube.com/watch?v=98lu__RIiK0"
-                    width="100%"
-                  />
-                </div>
-
-                <div style={{ paddingTop: "17%" }}>
-                  <span className="landing-video-text">
-                    lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
-                  </span>
-                  <ReactPlayer
-                    url="https://www.youtube.com/watch?v=2a7Q6yc8x_w"
-                    width="100%"
-                  />
-                </div>
+                <Roll left>
+                  <div>
+                    <span className="landing-video-text">
+                      lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
+                    </span>
+                    {/* <YouTube videoId="98lu__RIiK0" opts={opts} /> */}
+                    <ReactPlayer
+                      url="https://www.youtube.com/watch?v=98lu__RIiK0"
+                      width="100%"
+                    />
+                  </div>
+                </Roll>
+                <Fade left>
+                  <div style={{ paddingTop: "17%" }}>
+                    <span className="landing-video-text">
+                      lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
+                    </span>
+                    {/* <YouTube videoId="2a7Q6yc8x_w" opts={opts} /> */}
+                    <ReactPlayer
+                      url="https://www.youtube.com/watch?v=2a7Q6yc8x_w"
+                      width="100%"
+                    />
+                  </div>
+                </Fade>
               </MDBCol>
 
               <MDBCol>
-                <div style={{ paddingTop: "17%" }}>
-                  <span className="landing-video-text">
-                    lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
-                  </span>
-                  <ReactPlayer
-                    url="https://www.youtube.com/watch?v=mbzu3kcq1A8"
-                    width="100%"
-                  />
-                </div>
+                <Roll right>
+                  <div style={{ paddingTop: "17%" }}>
+                    <span className="landing-video-text">
+                      lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
+                    </span>
+                    {/* <YouTube videoId="mbzu3kcq1A8" opts={opts} /> */}
+                    <ReactPlayer
+                      url="https://www.youtube.com/watch?v=mbzu3kcq1A8"
+                      width="100%"
+                    />
+                  </div>
+                </Roll>
 
-                <div style={{ paddingTop: "17%" }}>
-                  <span className="landing-video-text">
-                    lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
-                  </span>
-                  <ReactPlayer
-                    url="https://www.youtube.com/watch?v=uPTjSSNRTQk"
-                    width="100%"
-                  />
-                </div>
+                <Fade right>
+                  <div style={{ paddingTop: "17%" }}>
+                    <span className="landing-video-text">
+                      lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
+                    </span>
+                    {/* <YouTube videoId="uPTjSSNRTQk" opts={opts} /> */}
+                    <ReactPlayer
+                      url="https://www.youtube.com/watch?v=uPTjSSNRTQk"
+                      width="100%"
+                    />
+                  </div>
+                </Fade>
               </MDBCol>
             </MDBRow>
           </MDBContainer>
@@ -115,9 +133,9 @@ class LandingPage extends Component {
             <div className="landing-about text-right">
               <h3>insert something to point to about page</h3>
               <MDBContainer>
-                <MDBRow>
+                <MDBRow className="d-flex">
                   <div>
-                    <MDBCol className="d-flex">
+                    <MDBCol className="">
                       <Link to="/about">
                         <MDBBtn outline color="red">
                           The Difference
