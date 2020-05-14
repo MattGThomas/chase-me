@@ -5,6 +5,7 @@ import ContactForm from "../src/Components/ContactForm/ContactForm.js";
 import About from "./Components/About/About.js";
 import LandingPage from "./Components/Landingpage/LandingPage.js";
 import DroneGallery from "./Components/Galleries/Drone/DroneGallery.js";
+import Footer from "./Components/Footer/Footer.js";
 // import background from "./images/reg-pics/IMG_3070.PNG";
 // import drone from "../src/images/reg-pics/Drone_Reel_1.mp4";
 import "./App.css";
@@ -14,7 +15,7 @@ function App() {
     <div
       className="App"
       // style={{ backgroundImage: `url(${background})`, minHeight: "100vh" }}
-      style={{ background: "black", minHeight: "100vh" }}
+      style={{ background: "#0A0A0A", minHeight: "100vh" }}
       // style={{ backgroundImage: `url(${drone})`, minHeight: "100vh" }}
       // style={{
       //   background:
@@ -30,6 +31,7 @@ function App() {
           <Route exact path="/drone" component={DroneGallery} />
         </Switch>
       </div>
+      <Footer />
     </div>
   );
 }

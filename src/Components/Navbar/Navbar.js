@@ -13,6 +13,7 @@ import {
   MDBDropdownItem,
   MDBIcon,
 } from "mdbreact";
+import "./navbar.css";
 // import logo from "../../images/reg-pics/IMG_3070.PNG";
 
 class Navbar extends Component {
@@ -38,20 +39,29 @@ class Navbar extends Component {
         <MDBNavbarToggler onClick={this.toggle} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
+            {/* <div className="nav-items"> */}
             <MDBNavItem active>
-              <MDBNavLink to="/" style={{ color: "black" }}>
-                Home
+              <MDBNavLink
+                to="/"
+                // style={{ color: "#808080" }}
+                className="nav-items"
+              >
+                <strong>Home</strong>
               </MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/about" style={{ color: "black" }}>
+              <MDBNavLink
+                to="/about"
+                style={{ color: "black" }}
+                className="nav-items"
+              >
                 About
               </MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
-                  <span className="mr-2" style={{ color: "black" }}>
+                  <span className="mr-2 nav-items" style={{ color: "black" }}>
                     Galleries
                   </span>
                 </MDBDropdownToggle>
@@ -66,10 +76,15 @@ class Navbar extends Component {
               </MDBDropdown>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/contact-us" style={{ color: "black" }}>
+              <MDBNavLink
+                to="/contact-us"
+                style={{ color: "black" }}
+                className="nav-items"
+              >
                 Contact Us
               </MDBNavLink>
             </MDBNavItem>
+            {/* </div> */}
           </MDBNavbarNav>
 
           <MDBNavbarNav right>
@@ -79,7 +94,7 @@ class Navbar extends Component {
                 icon="facebook-square"
                 right
                 size="2x"
-                style={{ color: "black" }}
+                style={{ color: "#bfbfbf" }}
               />
             </MDBNavItem>
             <MDBNavItem>
@@ -93,7 +108,7 @@ class Navbar extends Component {
                   icon="twitter-square"
                   right
                   size="2x"
-                  style={{ color: "black" }}
+                  style={{ color: "#bfbfbf" }}
                 />
               </a>
             </MDBNavItem>
@@ -103,7 +118,7 @@ class Navbar extends Component {
                 icon="instagram"
                 right
                 size="2x"
-                style={{ color: "black" }}
+                style={{ color: "#bfbfbf" }}
               />
             </MDBNavItem>
             <MDBNavItem>
@@ -117,7 +132,7 @@ class Navbar extends Component {
                   icon="youtube-square"
                   right
                   size="2x"
-                  style={{ color: "black" }}
+                  style={{ color: "#bfbfbf" }}
                 />
               </a>
             </MDBNavItem>
