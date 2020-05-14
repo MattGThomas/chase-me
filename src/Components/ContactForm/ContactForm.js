@@ -29,16 +29,9 @@ class ContactForm extends Component {
   render() {
     return (
       <div className="contact-heading">
-        <h2 style={{ color: "#ff9e0d" }}>Contact Me</h2>
+        <h2>Contact Me</h2>
         <div>
-          <p
-            className="text-center"
-            style={{
-              color: "#ff9e0d",
-              // textAlign: "center",
-              // border: "1px solid red",
-            }}
-          >
+          <p className="text-center">
             <strong>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque{" "}
               <br />

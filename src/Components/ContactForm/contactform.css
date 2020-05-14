@@ -1,6 +1,15 @@
 .contact-heading {
+  font-family: "Cookie", cursive;
+  color: #f44336;
   padding-top: 7%;
   justify-content: center;
+}
+.contact-heading h2 {
+  font-size: 3rem;
+}
+.text-center {
+  color: #bfbfbf;
+  font-family: "Playfair Display", serif;
 }
 @media (max-width: 1024px) {
   .contact-heading {
