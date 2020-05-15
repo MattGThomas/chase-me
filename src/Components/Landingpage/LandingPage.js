@@ -54,8 +54,8 @@ class LandingPage extends Component {
           <h1 className="landing-header">Chase Me If You Can Productions</h1>
           <p className="landing-subtext">
             Let's Bring Your Vision To Life
-            <br />A one stop shop for all your Videography, Photography, and
-            Drone Footage & editing needs
+            <br />A one stop shop for all your Videography, Photography, Drone
+            Footage & editing needs
           </p>
           <MDBContainer>
             <MDBRow className="landing-videos">

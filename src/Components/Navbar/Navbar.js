@@ -90,13 +90,19 @@ class Navbar extends Component {
 
           <MDBNavbarNav right>
             <MDBNavItem>
-              <MDBIcon
-                fab
-                icon="facebook-square"
-                right
-                size="2x"
-                style={{ color: "#bfbfbf" }}
-              />
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://m.facebook.com/CMIYCProd/"
+              >
+                <MDBIcon
+                  fab
+                  icon="facebook-square"
+                  right
+                  size="2x"
+                  style={{ color: "#bfbfbf" }}
+                />
+              </a>
             </MDBNavItem>
             <MDBNavItem>
               <a

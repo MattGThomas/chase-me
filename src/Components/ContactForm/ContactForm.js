@@ -25,8 +25,38 @@ class ContactForm extends Component {
       email: "",
     };
   }
-  submit = (evt) => {};
+  change = (evt) => {
+    evt.preventDefault();
+    this.setState({
+      [evt.target.name]: evt.target.value,
+    });
+  };
+  submit = (evt) => {
+    evt.preventDefault();
+    const { firstName, lastName, message, email, phoneNumber } = this.state;
+    Axios.post("http://localhost:3300/api/request", {
+      firstName,
+      lastName,
+      message,
+      email,
+      phoneNumber,
+    })
+      .then((res) => {
+        console.log(res);
+        return this.setState({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phoneNumber: "",
+          message: "",
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   render() {
+    const { firstName, lastName, email, phoneNumber, message } = this.state;
     return (
       <div className="contact-heading">
         <h2>Contact Me</h2>
@@ -58,43 +88,69 @@ class ContactForm extends Component {
               <div className="d-flex justify-content-center">
                 <MDBCard style={{ padding: "2%", background: "fffff0" }}>
                   <MDBCardBody>
-                    <form>
-                      {/* <MDBRow> */}
+                    <form onSubmit={this.submit}>
                       <MDBRow md="4">
                         <MDBCol>
-                          {/* <div> */}
-                          {/* <MDBIcon icon="user-secret" /> */}
-                          <MDBInput label="Name" color="black" required />
-                          {/* </div> */}
+                          <MDBInput
+                            label="First Name"
+                            id="firstName"
+                            name="firstName"
+                            value={firstName}
+                            type="text"
+                            color="black"
+                            onChange={this.change}
+                            required
+                          />
                         </MDBCol>
 
                         <MDBCol>
-                          <MDBInput label="Phone Number" />
+                          <MDBInput
+                            label="Phone Number"
+                            id="phoneNumber"
+                            name="phoneNumber"
+                            value={phoneNumber}
+                            type="tel"
+                            onChange={this.change}
+                          />
                         </MDBCol>
                       </MDBRow>
 
                       <MDBRow md="4">
                         <MDBCol>
-                          <MDBInput label="Email" required />
+                          <MDBInput
+                            label="Email"
+                            id="email"
+                            name="email"
+                            value={email}
+                            type="email"
+                            onChange={this.change}
+                            required
+                          />
                         </MDBCol>
 
                         <MDBCol>
-                          <MDBInput label="Last Name" required />
+                          <MDBInput
+                            label="Last Name"
+                            id="lastName"
+                            name="lastName"
+                            value={lastName}
+                            type="text"
+                            onChange={this.change}
+                          />
                         </MDBCol>
                       </MDBRow>
-                      {/* </MDBRow> */}
-                      {/* <textarea /> */}
+
                       <MDBInput
                         type="textarea"
+                        id="message"
+                        name="message"
+                        value={message}
                         label="leave us a message"
+                        onChange={this.change}
                         required
                       />
-                      {/* <MDBInput
-              label="Whats the occassion? wedding? graduation?"
-              required
-            /> */}
-                      {/* <MDBInput label="Whats Your Budget" /> */}
-                      <MDBBtn outline color="black">
+
+                      <MDBBtn outline color="black" type="submit">
                         <MDBIcon
                           icon="paper-plane"
                           style={{ paddingRight: "1%", color: "black" }}

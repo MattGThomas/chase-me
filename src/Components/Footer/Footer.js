@@ -9,13 +9,20 @@ const Footer = () => {
     >
       <MDBContainer fluid className="text-center">
         <MDBRow style={{ justifyContent: "space-between", padding: "0 15%" }}>
-          <MDBIcon
-            fab
-            icon="facebook-square"
-            right
-            size="2x"
-            style={{ color: "red" }}
-          />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://m.facebook.com/CMIYCProd/"
+          >
+            <MDBIcon
+              fab
+              icon="facebook-square"
+              right
+              size="2x"
+              style={{ color: "red" }}
+            />
+          </a>
+
           <a
             target="_blank"
             rel="noopener noreferrer"

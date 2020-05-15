@@ -25,13 +25,15 @@ function App() {
     >
       <Navbar />
       <div>
-        <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/contact-us" component={ContactForm} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/drone" component={DroneGallery} />
-          <Route exact path="/hero-101" component={Hero} />
-        </Switch>
+        <React.StrictMode>
+          <Switch>
+            <Route exact path="/" component={LandingPage} />
+            <Route exact path="/contact-us" component={ContactForm} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/drone" component={DroneGallery} />
+            <Route exact path="/hero-101" component={Hero} />
+          </Switch>
+        </React.StrictMode>
       </div>
       <Footer />
     </div>
