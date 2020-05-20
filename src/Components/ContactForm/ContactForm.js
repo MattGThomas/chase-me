@@ -86,7 +86,9 @@ class ContactForm extends Component {
             </MDBCol>
             <MDBCol>
               <div className="d-flex justify-content-center">
-                <MDBCard style={{ padding: "2%", background: "fffff0" }}>
+                <MDBCard
+                  style={{ padding: "2%", background: "fffff0", width: "100%" }}
+                >
                   <MDBCardBody>
                     <form onSubmit={this.submit}>
                       <MDBRow md="4">

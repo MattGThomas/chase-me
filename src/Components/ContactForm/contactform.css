@@ -11,6 +11,9 @@
   color: #bfbfbf;
   font-family: "Playfair Display", serif;
 }
+.d-flex {
+  width: 100%;
+}
 @media (max-width: 1024px) {
   .contact-heading {
     padding-top: 7%;
