@@ -38,6 +38,13 @@
   padding-top: 8%;
   font-size: 1.6rem;
   font-family: "Playfair Display", serif;
+  min-width: 100vw;
+}
+.landing-photos {
+  min-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
 }
 @media (max-width: 450px) {
   .landing-div {
@@ -47,4 +54,45 @@
     display: flex;
     flex-direction: column;
   }
+  .landing-photos {
+    display: flex;
+    flex-direction: column;
+  }
+  .picture {
+    /* min-width: 100vw; */
+    /* width: 100%; */
+    /* border: 2px solid red; */
+  }
+}
+.picture-box {
+  background-color: transparent;
+  /* helps with the 3d effect */
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+.picture-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.picture-box:hover .picture-box-inner {
+  transform: rotateY(180deg);
+}
+
+.picture-box-front,
+.picture-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.picture-box-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
 }

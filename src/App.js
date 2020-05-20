@@ -16,7 +16,8 @@ function App() {
     <div
       className="App"
       // style={{ backgroundImage: `url(${background})`, minHeight: "100vh" }}
-      style={{ background: "#0A0A0A", minHeight: "100vh" }}
+      style={{ background: "#212121", minHeight: "100vh" }}
+      // style={{ background: "#0A0A0A", minHeight: "100vh" }}
       // style={{ backgroundImage: `url(${drone})`, minHeight: "100vh" }}
       // style={{
       //   background:

@@ -8,7 +8,8 @@ function Hero() {
     <div style={{ color: " #bfbfbf", paddingTop: "7%" }}>
       <h2 className="hero-header">Hero 101!</h2>
       <p className="hero-subtext">Take a look at the Hero 101 series!</p>
-      <MDBContainer style={{ backgroundImage: `url(${logo})`, color: "black" }}>
+      <MDBContainer>
+        {/* <MDBContainer style={{ backgroundImage: `url(${logo})`, color: "black" }}> */}
         <MDBRow className="hero-row" style={{ paddingTop: "3%" }}>
           <MDBCol style={{ width: "100%" }}>
             <ReactPlayer
@@ -24,7 +25,7 @@ function Hero() {
         <MDBRow>
           <div
             style={{
-              background: "#0A0A0A",
+              background: "#212121",
               height: "225px",
               width: "100%",
               color: "white",
@@ -50,7 +51,7 @@ function Hero() {
         <MDBRow>
           <div
             style={{
-              background: "#0A0A0A",
+              background: "#212121",
               height: "225px",
               width: "100%",
               color: "white",
@@ -76,7 +77,7 @@ function Hero() {
         <MDBRow>
           <div
             style={{
-              background: "#0A0A0A",
+              background: "#212121",
               height: "225px",
               width: "100%",
               color: "white",

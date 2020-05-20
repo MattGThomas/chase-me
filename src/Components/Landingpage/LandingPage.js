@@ -65,11 +65,11 @@ class LandingPage extends Component {
                     <span className="landing-video-text">
                       lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
                     </span>
-                    {/* <YouTube videoId="98lu__RIiK0" opts={opts} /> */}
-                    <ReactPlayer
+                    <YouTube videoId="98lu__RIiK0" opts={opts} />
+                    {/* <ReactPlayer
                       url="https://www.youtube.com/watch?v=98lu__RIiK0"
                       width="100%"
-                    />
+                    /> */}
                   </div>
                 </Roll>
                 <Fade left>
@@ -77,11 +77,11 @@ class LandingPage extends Component {
                     <span className="landing-video-text">
                       lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
                     </span>
-                    {/* <YouTube videoId="2a7Q6yc8x_w" opts={opts} /> */}
-                    <ReactPlayer
+                    <YouTube videoId="2a7Q6yc8x_w" opts={opts} />
+                    {/* <ReactPlayer
                       url="https://www.youtube.com/watch?v=2a7Q6yc8x_w"
                       width="100%"
-                    />
+                    /> */}
                   </div>
                 </Fade>
               </MDBCol>
@@ -92,11 +92,11 @@ class LandingPage extends Component {
                     <span className="landing-video-text">
                       lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
                     </span>
-                    {/* <YouTube videoId="mbzu3kcq1A8" opts={opts} /> */}
-                    <ReactPlayer
+                    <YouTube videoId="mbzu3kcq1A8" opts={opts} />
+                    {/* <ReactPlayer
                       url="https://www.youtube.com/watch?v=mbzu3kcq1A8"
                       width="100%"
-                    />
+                    /> */}
                   </div>
                 </Roll>
 
@@ -105,11 +105,11 @@ class LandingPage extends Component {
                     <span className="landing-video-text">
                       lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
                     </span>
-                    {/* <YouTube videoId="uPTjSSNRTQk" opts={opts} /> */}
-                    <ReactPlayer
+                    <YouTube videoId="uPTjSSNRTQk" opts={opts} />
+                    {/* <ReactPlayer
                       url="https://www.youtube.com/watch?v=uPTjSSNRTQk"
                       width="100%"
-                    />
+                    /> */}
                   </div>
                 </Fade>
               </MDBCol>
@@ -120,12 +120,56 @@ class LandingPage extends Component {
             <span>
               Videography, Photography, Drone footage, I specialize in it all
             </span>
-            <div style={{ minWidth: "100vw" }}>
-              <img src={chase} alt="" width="25%" height="275px" />
-              <img src={dempseys} alt="" width="25%" height="275px" />
-              <img src={baseball} alt="" width="25%" height="275px" />
-              <img src={party} alt="" width="25%" height="275px" />
-            </div>
+            {/* <div className="landing-photos">
+              <div className="picture-box">
+                <div className="picture picture-box-inner">
+                  <div className="picture-box-front">
+                    <img src={chase} alt="" width="100%" height="275px" />
+                  </div>
+                  <div className="picture-box-back">
+                    <h2>lorem Videography</h2>
+                    <p>hello Videography</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="picture-box">
+                <div className="picture picture-box-inner">
+                  <div className="picture-box-front">
+                    <img src={dempseys} alt="" width="100%" height="275px" />
+                  </div>
+                  <div className="picture-box-back">
+                    <h2>lorem Videography</h2>
+                    <p>hello Videography</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="picture-box">
+                <div className="picture picture-box-inner">
+                  <div className="picture-box-front">
+                    <img src={baseball} alt="" width="100%" height="275px" />
+                  </div>
+                  <div className="picture-box-back">
+                    <h2>lorem Videography</h2>
+                    <p>hello Videography</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="picture-box">
+                <div className="picture picture-box-inner">
+                  <div className="picture-box-front">
+                    <img src={party} alt="" width="100%" height="275px" />
+                  </div>
+                  <div className="picture-box-back">
+                    <h2>lorem Videography</h2>
+                    <p>hello Videography</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div> */}
           </div>
 
           {/* <Link to="/about"> */}
