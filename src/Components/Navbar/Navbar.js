@@ -69,9 +69,11 @@ class Navbar extends Component {
                 <MDBDropdownMenu>
                   <MDBDropdownItem href="#!">Drone</MDBDropdownItem>
                   <MDBDropdownItem href="#!">Videos</MDBDropdownItem>
-                  <MDBDropdownItem href="/hero-101">Pictures</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Pictures</MDBDropdownItem>
                   {/* <Link to="/hero-101"> */}
-                  <MDBDropdownItem href="/hero-101">Hero 101</MDBDropdownItem>
+                  {/* <MDBDropdownItem href="/hero-101"> */}
+                  <Link to="/hero-101">Hero 101</Link>
+                  {/* </MDBDropdownItem> */}
                   {/* </Link> */}
                 </MDBDropdownMenu>
               </MDBDropdown>
