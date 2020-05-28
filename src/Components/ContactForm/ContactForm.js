@@ -161,6 +161,7 @@ class ContactForm extends Component {
                         />
                         hello
                       </MDBBtn>
+                      <input type="hidden" name="form-name" value="contact" />
                     </form>
                   </MDBCardBody>
                 </MDBCard>
