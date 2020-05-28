@@ -67,9 +67,9 @@ class Navbar extends Component {
                   </span>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem href="#!">Drone</MDBDropdownItem>
+                  {/* <MDBDropdownItem href="#!">Drone</MDBDropdownItem>
                   <MDBDropdownItem href="#!">Videos</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Pictures</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Pictures</MDBDropdownItem> */}
                   {/* <Link to="/hero-101"> */}
                   {/* <MDBDropdownItem href="/hero-101"> */}
                   <Link to="/hero-101">Hero 101</Link>
@@ -84,7 +84,7 @@ class Navbar extends Component {
                 style={{ color: "black" }}
                 className="nav-items"
               >
-                Contact Us
+                Contact Me
               </MDBNavLink>
             </MDBNavItem>
             {/* </div> */}

@@ -62,16 +62,18 @@ class ContactForm extends Component {
         <h2>Contact Me</h2>
         <div>
           <p className="text-center">
-            <strong>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque{" "}
-              <br />
-              lectus enim, efficitur ac finibus hendrerit, elementum quis leo.
-              <br />
-              Proin convallis ornare tortor. Vestibulum aliquet libero sed
-              {/* if you're looking for some work video blah blah blah <br />
+            Send me a message, let me know what you are looking for and lets
+            bring your dream to life
+            {/* <strong> */}
+            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque{" "}
+            <br />
+            lectus enim, efficitur ac finibus hendrerit, elementum quis leo.
+            <br />
+            Proin convallis ornare tortor. Vestibulum aliquet libero sed */}
+            {/* if you're looking for some work video blah blah blah <br />
                 or some pictures for graduation, weddings, etc...
                 <br /> shoot us a message and we will get right back to you */}
-            </strong>
+            {/* </strong> */}
           </p>
         </div>
         <MDBContainer>

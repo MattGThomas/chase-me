@@ -12,7 +12,9 @@ import party from "../../images/reg-pics/party.JPG";
 import YouTube from "react-youtube";
 import Roll from "react-reveal/Roll";
 import Fade from "react-reveal/Fade";
+
 import "./landingpage.css";
+
 // import { MDBInput } from "mdbreact";
 
 // const slideData = [
@@ -51,7 +53,14 @@ class LandingPage extends Component {
     return (
       <div>
         <div style={{ color: "#f44336" }} className="landing-div">
-          <h1 className="landing-header">Chase Me If You Can Productions</h1>
+          <div className="landing-container">
+            <img src={baseball} alt="" width="100%" />
+            <h1 className="landing-header centered">
+              Chase Me If You Can <br />
+              Productions
+            </h1>
+          </div>
+
           <p className="landing-subtext">
             Let's Bring Your Vision To Life
             <br />A one stop shop for all your Videography, Photography, Drone
@@ -62,9 +71,7 @@ class LandingPage extends Component {
               <MDBCol>
                 <Roll left>
                   <div>
-                    <span className="landing-video-text">
-                      lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
-                    </span>
+                    <span className="landing-video-text">smoke something</span>
                     <YouTube videoId="98lu__RIiK0" opts={opts} />
                     {/* <ReactPlayer
                       url="https://www.youtube.com/watch?v=98lu__RIiK0"
@@ -74,9 +81,7 @@ class LandingPage extends Component {
                 </Roll>
                 <Fade left>
                   <div style={{ paddingTop: "17%" }}>
-                    <span className="landing-video-text">
-                      lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
-                    </span>
+                    <span className="landing-video-text">do what i do</span>
                     <YouTube videoId="2a7Q6yc8x_w" opts={opts} />
                     {/* <ReactPlayer
                       url="https://www.youtube.com/watch?v=2a7Q6yc8x_w"
@@ -89,9 +94,7 @@ class LandingPage extends Component {
               <MDBCol>
                 <Roll right>
                   <div style={{ paddingTop: "17%" }}>
-                    <span className="landing-video-text">
-                      lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
-                    </span>
+                    <span className="landing-video-text">fresh cut</span>
                     <YouTube videoId="mbzu3kcq1A8" opts={opts} />
                     {/* <ReactPlayer
                       url="https://www.youtube.com/watch?v=mbzu3kcq1A8"
@@ -102,9 +105,7 @@ class LandingPage extends Component {
 
                 <Fade right>
                   <div style={{ paddingTop: "17%" }}>
-                    <span className="landing-video-text">
-                      lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
-                    </span>
+                    <span className="landing-video-text">swervin</span>
                     <YouTube videoId="uPTjSSNRTQk" opts={opts} />
                     {/* <ReactPlayer
                       url="https://www.youtube.com/watch?v=uPTjSSNRTQk"
@@ -117,9 +118,7 @@ class LandingPage extends Component {
           </MDBContainer>
           <div className="landing-photo-reel">
             {/* <MDBRow> */}
-            <span>
-              Videography, Photography, Drone footage, I specialize in it all
-            </span>
+
             {/* <div className="landing-photos">
               <div className="picture-box">
                 <div className="picture picture-box-inner">
@@ -174,26 +173,30 @@ class LandingPage extends Component {
 
           {/* <Link to="/about"> */}
           <div>
-            <div className="landing-about text-right">
-              <h3>insert something to point to about page</h3>
+            <div className="landing-about">
+              {/* <h3>insert something to point to about page</h3> */}
               <MDBContainer>
-                <MDBRow className="d-flex">
-                  <div>
-                    <MDBCol className="">
-                      <Link to="/about">
-                        <MDBBtn outline color="red">
-                          The Difference
-                        </MDBBtn>
-                      </Link>
-                      <Link to="/contact-us">
-                        <MDBBtn outline color="red">
-                          Contact Me
-                        </MDBBtn>
-                      </Link>
-                    </MDBCol>
-                  </div>
+                {/* <MDBRow className="d-flex"> */}
+                {/* <div>
+                    <MDBCol className=""> */}
+                <Link to="/about">
+                  <MDBBtn outline color="red">
+                    The Difference
+                  </MDBBtn>
+                </Link>
+                <Link to="/contact-us">
+                  <MDBBtn outline color="red">
+                    Contact Me
+                  </MDBBtn>
+                </Link>
+                <h1 className="landing-header">
+                  Chase Me If You Can <br />
+                  Productions
+                </h1>
+                {/* </MDBCol>
+                  </div> */}
 
-                  <MDBCol className="text-right">
+                {/* <MDBCol className="text-right">
                     <span>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Quisque
@@ -208,8 +211,8 @@ class LandingPage extends Component {
                       <br /> turpis urna, imperdiet a consequat in, luctus non
                       odio.
                     </span>
-                  </MDBCol>
-                </MDBRow>
+                  </MDBCol> */}
+                {/* </MDBRow> */}
               </MDBContainer>
             </div>
           </div>

@@ -4,19 +4,31 @@
 
 .landing-header {
   font-family: "Cookie", cursive;
-  font-size: 2.4rem;
+  font-size: 6rem;
   padding-top: "7%";
   /* color: #bfbfbf; */
+}
+.landing-container {
+  position: relative;
+  text-align: center;
+  /* color: white; */
+  padding-bottom: 7%;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .landing-subtext {
   padding-bottom: 5%;
   font-family: "Playfair Display", serif;
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #bfbfbf;
 }
 .landing-div {
-  padding-top: 7%;
+  /* padding-top: 7%; */
 }
 .landing-video-text {
   color: #bfbfbf;
@@ -48,7 +60,7 @@
 }
 @media (max-width: 450px) {
   .landing-div {
-    padding-top: 20%;
+    padding-top: 15%;
   }
   .landing-videos {
     display: flex;
@@ -57,6 +69,9 @@
   .landing-photos {
     display: flex;
     flex-direction: column;
+  }
+  .landing-header {
+    font-size: 4rem;
   }
   .picture {
     /* min-width: 100vw; */
