@@ -7,6 +7,7 @@ import LandingPage from "./Components/Landingpage/LandingPage.js";
 import DroneGallery from "./Components/Galleries/Drone/DroneGallery.js";
 import Footer from "./Components/Footer/Footer.js";
 import Hero from "./Components/Hero/Hero.js";
+import CarouselComp from "./Components/Carousel/CarouselComp.js";
 // import background from "./images/reg-pics/IMG_3070.PNG";
 // import drone from "../src/images/reg-pics/Drone_Reel_1.mp4";
 import "./App.css";
@@ -33,6 +34,7 @@ function App() {
             <Route exact path="/about" component={About} />
             <Route exact path="/drone" component={DroneGallery} />
             <Route exact path="/hero-101" component={Hero} />
+            <Route exact path="/carousel" component={CarouselComp} />
           </Switch>
         </React.StrictMode>
       </div>

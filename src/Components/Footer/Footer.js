@@ -36,13 +36,19 @@ const Footer = () => {
               style={{ color: "#bfbfbf" }}
             />
           </a>
-          <MDBIcon
-            fab
-            icon="instagram"
-            right
-            size="2x"
-            style={{ color: "red" }}
-          />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/chaseboykins/"
+          >
+            <MDBIcon
+              fab
+              icon="instagram"
+              right
+              size="2x"
+              style={{ color: "red" }}
+            />
+          </a>
           <a
             target="_blank"
             rel="noopener noreferrer"

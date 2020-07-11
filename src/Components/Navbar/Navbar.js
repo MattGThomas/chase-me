@@ -37,8 +37,13 @@ class Navbar extends Component {
           </div>
           {/* </p> */}
         </MDBNavbarBrand>
-        <MDBNavbarToggler onClick={this.toggle} />
-        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+        <MDBNavbarToggler onClick={this.toggle} color="red" />
+        <MDBCollapse
+          id="navbarCollapse3"
+          isOpen={this.state.isOpen}
+          navbar
+          color="red"
+        >
           <MDBNavbarNav left>
             {/* <div className="nav-items"> */}
             <MDBNavItem active>
@@ -67,14 +72,9 @@ class Navbar extends Component {
                   </span>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  {/* <MDBDropdownItem href="#!">Drone</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Videos</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Pictures</MDBDropdownItem> */}
-                  {/* <Link to="/hero-101"> */}
-                  {/* <MDBDropdownItem href="/hero-101"> */}
-                  <Link to="/hero-101">Hero 101</Link>
-                  {/* </MDBDropdownItem> */}
-                  {/* </Link> */}
+                  <MDBDropdownItem href="/hero-101">Hero 101</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Gallery</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Drone</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>

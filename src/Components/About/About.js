@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { MDBContainer, MDBCol, MDBRow, MDBDropdown } from "mdbreact";
 import drone_chase from "../../images/drone-pics/chase.JPG";
+import chase from "../../images/reg-pics/chase.JPG";
 import "./about.css";
 
 const About = (props) => {
@@ -20,19 +21,7 @@ const About = (props) => {
               style={{ paddingBottom: "10%" }}
             /> */}
           {/* <div style={{ marginRight: "3%" }}> */}
-          <MDBCol>
-            <div className="about-pics">
-              <img
-                src={drone_chase}
-                alt=""
-                // width="80%"
-                height="300px"
-                style={{ paddingBottom: "4%" }}
-              />
-              {/* </div> */}
-              {/* <img src="https://placedog.net/800/640?id=3" alt="" width="80%" /> */}
-            </div>
-          </MDBCol>
+
           <MDBCol>
             <div className="offers">
               <span className="new-about-header">What I Offer:</span>
@@ -40,9 +29,8 @@ const About = (props) => {
               <br />
               - Photography – wedding, senior photos, family portraits, etc…
               <br />
-              <br />
-              - Videography – events, drone footage, music videos, sketches and
-              shorts, etc…
+              <br />- Videography – events, <strong>drone footage</strong>,
+              music videos, sketches and shorts, etc…
               <br />
               <br />
               - Audio – podcasts, commercials, narratives, etc…
@@ -55,7 +43,19 @@ const About = (props) => {
               <br />
             </div>
           </MDBCol>
-
+          <MDBCol>
+            <div className="about-pics">
+              <img
+                src={chase}
+                alt=""
+                // width="100%"
+                height="300px"
+                style={{ paddingBottom: "4%" }}
+              />
+              {/* </div> */}
+              {/* <img src="https://placedog.net/800/640?id=3" alt="" width="80%" /> */}
+            </div>
+          </MDBCol>
           {/* </MDBCol> */}
           <div className="text-left">
             {/* <strong> */}

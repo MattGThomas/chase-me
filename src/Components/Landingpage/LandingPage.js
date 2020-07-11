@@ -8,7 +8,13 @@ import { MDBRow, MDBCol, MDBContainer, MDBBtn } from "mdbreact";
 import dempseys from "../../images/reg-pics/dempseys.JPG";
 import chase from "../../images/drone-pics/chase.JPG";
 import baseball from "../../images/reg-pics/baseball.JPG";
+import baseball_2 from "../../images/reg-pics/baseball_2.JPG";
+import slugger from "../../images/reg-pics/slugger.JPG";
+import wichita from "../../images/reg-pics/wichita.JPG";
 import party from "../../images/reg-pics/party.JPG";
+import topview from "../../images/reg-pics/topview.jpeg";
+import b_raster from "../../images/reg-pics/black raster.png";
+import w_raster from "../../images/reg-pics/white raster.png";
 import YouTube from "react-youtube";
 import Roll from "react-reveal/Roll";
 import Fade from "react-reveal/Fade";
@@ -54,13 +60,15 @@ class LandingPage extends Component {
       <div>
         <div style={{ color: "#f44336" }} className="landing-div">
           <div className="landing-container">
-            <img src={baseball} alt="" width="100%" />
-            <h1 className="landing-header centered">
-              Chase Me If You Can <br />
-              Productions
-            </h1>
+            {/* <img src={slugger} alt="" width="100%" /> */}
+            <img src={topview} alt="" width="100%" />
+            <img src={w_raster} alt="" className="landing-header centered" />
           </div>
 
+          <h1 className="landing-header">
+            Chase Me If You Can
+            <br /> Productions
+          </h1>
           <p className="landing-subtext">
             Let's Bring Your Vision To Life
             <br />A one stop shop for all your Videography, Photography, Drone
@@ -82,7 +90,9 @@ class LandingPage extends Component {
                 <Fade left>
                   <div style={{ paddingTop: "17%" }}>
                     <span className="landing-video-text">do what i do</span>
-                    <YouTube videoId="2a7Q6yc8x_w" opts={opts} />
+                    {/* <YouTube videoId="2a7Q6yc8x_w" opts={opts} /> */}
+                    <YouTube videoId="5ZtVKIydjZI" opts={opts} />
+
                     {/* <ReactPlayer
                       url="https://www.youtube.com/watch?v=2a7Q6yc8x_w"
                       width="100%"
@@ -95,7 +105,8 @@ class LandingPage extends Component {
                 <Roll right>
                   <div style={{ paddingTop: "17%" }}>
                     <span className="landing-video-text">fresh cut</span>
-                    <YouTube videoId="mbzu3kcq1A8" opts={opts} />
+                    {/* <YouTube videoId="mbzu3kcq1A8" opts={opts} /> */}
+                    <YouTube videoId="vGfDWqofInY" opts={opts} />
                     {/* <ReactPlayer
                       url="https://www.youtube.com/watch?v=mbzu3kcq1A8"
                       width="100%"
@@ -106,7 +117,8 @@ class LandingPage extends Component {
                 <Fade right>
                   <div style={{ paddingTop: "17%" }}>
                     <span className="landing-video-text">swervin</span>
-                    <YouTube videoId="uPTjSSNRTQk" opts={opts} />
+                    {/* <YouTube videoId="uPTjSSNRTQk" opts={opts} /> */}
+                    <YouTube videoId="uqh6krh-Y8U" opts={opts} />
                     {/* <ReactPlayer
                       url="https://www.youtube.com/watch?v=uPTjSSNRTQk"
                       width="100%"
