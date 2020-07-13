@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { MDBContainer, MDBCol, MDBRow } from "mdbreact";
-import logo from "../../images/reg-pics/IMG_3070.PNG";
+
 import "./hero.css";
 function Hero() {
   return (

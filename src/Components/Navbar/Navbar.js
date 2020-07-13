@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -73,7 +73,9 @@ class Navbar extends Component {
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                   <MDBDropdownItem href="/hero-101">Hero 101</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Gallery</MDBDropdownItem>
+                  <MDBDropdownItem href="/gallery-page">
+                    Gallery
+                  </MDBDropdownItem>
                   <MDBDropdownItem href="#!">Drone</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>

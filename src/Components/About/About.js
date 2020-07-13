@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MDBContainer, MDBCol, MDBRow, MDBDropdown } from "mdbreact";
-import drone_chase from "../../images/drone-pics/chase.JPG";
+import { MDBContainer, MDBCol, MDBRow } from "mdbreact";
+
 import chase from "../../images/reg-pics/chase.JPG";
 import "./about.css";
 

@@ -4,6 +4,12 @@ import CarouselSlide from "./CarouselSlide.js";
 import CarouselSelector from "./CarouselSelector.js";
 import series1 from "../../images/reg-pics/series1.JPG";
 import series2 from "../../images/reg-pics/series2.JPG";
+import series3 from "../../images/reg-pics/series3.JPG";
+import series4 from "../../images/reg-pics/series4.JPG";
+import series5 from "../../images/reg-pics/series5.JPG";
+import series6 from "../../images/reg-pics/series6.JPG";
+import series7 from "../../images/reg-pics/series7.JPG";
+
 import "./carousel.css";
 
 class CarouselComp extends Component {
@@ -14,24 +20,29 @@ class CarouselComp extends Component {
       picturesArray: [
         { picture: series1 },
         { picture: series2 },
-        {
-          content:
-            "Tomorrow, you will be released. If you are bored of brawling with thieves and want to achieve something there is a rare blue flower that grows on the eastern slopes. Pick one of these flowers. If you can carry it to the top of the mountain, you may find what you were looking for in the first place.",
-          author: "Bane",
-          source: "facebook",
-        },
-        {
-          content:
-            "You have learn to bury your guilt with anger. I will teach you to confront it and to face the truth.",
-          author: "Ra's Al Ghul",
-          source: "Snapchat",
-        },
-        {
-          content:
-            "Introduce a little anarchy, upset the established order and everything becomes chaos. I'm an agent of chaos. Oh, and you know the thing about chaos? It's fair.",
-          author: "Joker",
-          source: "facebook",
-        },
+        { picture: series3 },
+        { picture: series4 },
+        { picture: series5 },
+        { picture: series6 },
+        { picture: series7 },
+        // {
+        //   content:
+        //     "Tomorrow, you will be released. If you are bored of brawling with thieves and want to achieve something there is a rare blue flower that grows on the eastern slopes. Pick one of these flowers. If you can carry it to the top of the mountain, you may find what you were looking for in the first place.",
+        //   author: "Bane",
+        //   source: "facebook",
+        // },
+        // {
+        //   content:
+        //     "You have learn to bury your guilt with anger. I will teach you to confront it and to face the truth.",
+        //   author: "Ra's Al Ghul",
+        //   source: "Snapchat",
+        // },
+        // {
+        //   content:
+        //     "Introduce a little anarchy, upset the established order and everything becomes chaos. I'm an agent of chaos. Oh, and you know the thing about chaos? It's fair.",
+        //   author: "Joker",
+        //   source: "facebook",
+        // },
       ],
     };
   }
@@ -61,7 +72,7 @@ class CarouselComp extends Component {
   next = (evt) => {
     evt.preventDefault();
     let index = this.state.curIndex;
-    let { slides } = this.state;
+    // let { slides } = this.state;
     let slidesLength = this.state.picturesArray.length - 1;
 
     if (index === slidesLength) {
@@ -115,7 +126,7 @@ class CarouselComp extends Component {
                 key={index}
                 index={index}
                 curIndex={this.state.curIndex}
-                isCur={this.state.curIndex == index}
+                isCur={this.state.curIndex === index}
                 onClick={(e) => this.chooseSlide(index)}
               />
             ))}
