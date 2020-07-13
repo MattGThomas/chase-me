@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import CarouselComp from "../Carousel/CarouselComp.js";
+import "./gallery.css";
 class GalleryPage extends Component {
   constructor(props) {
     super(props);
@@ -10,9 +11,8 @@ class GalleryPage extends Component {
   }
   render() {
     return (
-      <div style={{ color: "white" }}>
-        <h2>hello</h2>
-        <p>nope</p>
+      <div style={{ paddingTop: "7%" }}>
+        <h2 className="gallery-header">Welcome to my gallery</h2>
 
         <CarouselComp />
       </div>

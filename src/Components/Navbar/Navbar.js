@@ -79,7 +79,9 @@ class Navbar extends Component {
                   <NavLink to="/gallery-page">
                     <MDBDropdownItem>Gallery</MDBDropdownItem>
                   </NavLink>
-                  <MDBDropdownItem href="#!">Drone</MDBDropdownItem>
+                  <NavLink to="!#">
+                    <MDBDropdownItem>Drone</MDBDropdownItem>
+                  </NavLink>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>

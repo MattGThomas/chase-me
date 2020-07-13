@@ -21,7 +21,19 @@ const About = (props) => {
               style={{ paddingBottom: "10%" }}
             /> */}
           {/* <div style={{ marginRight: "3%" }}> */}
-
+          <MDBCol>
+            <div className="about-pics text-right">
+              <img
+                src={chase}
+                alt=""
+                // width="100%"
+                height="300px"
+                style={{ paddingBottom: "4%" }}
+              />
+              {/* </div> */}
+              {/* <img src="https://placedog.net/800/640?id=3" alt="" width="80%" /> */}
+            </div>
+          </MDBCol>
           <MDBCol>
             <div className="offers">
               <span className="new-about-header">What I Offer:</span>
@@ -43,19 +55,7 @@ const About = (props) => {
               <br />
             </div>
           </MDBCol>
-          <MDBCol>
-            <div className="about-pics">
-              <img
-                src={chase}
-                alt=""
-                // width="100%"
-                height="300px"
-                style={{ paddingBottom: "4%" }}
-              />
-              {/* </div> */}
-              {/* <img src="https://placedog.net/800/640?id=3" alt="" width="80%" /> */}
-            </div>
-          </MDBCol>
+
           {/* </MDBCol> */}
           <div className="text-left">
             {/* <strong> */}
