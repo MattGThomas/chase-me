@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 import {
   MDBNavbar,
@@ -72,10 +73,12 @@ class Navbar extends Component {
                   </span>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem href="/hero-101">Hero 101</MDBDropdownItem>
-                  <MDBDropdownItem href="/gallery-page">
-                    Gallery
-                  </MDBDropdownItem>
+                  <NavLink to="/hero-101">
+                    <MDBDropdownItem>Hero 101</MDBDropdownItem>
+                  </NavLink>
+                  <NavLink to="/gallery-page">
+                    <MDBDropdownItem>Gallery</MDBDropdownItem>
+                  </NavLink>
                   <MDBDropdownItem href="#!">Drone</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
