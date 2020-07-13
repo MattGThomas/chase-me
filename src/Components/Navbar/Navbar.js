@@ -89,7 +89,7 @@ class Navbar extends Component {
                 style={{ color: "black" }}
                 className="nav-items"
               >
-                Contact Me
+                Contact
               </MDBNavLink>
             </MDBNavItem>
             {/* </div> */}
