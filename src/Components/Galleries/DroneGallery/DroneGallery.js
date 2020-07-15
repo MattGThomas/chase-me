@@ -24,9 +24,7 @@ class DroneGallery extends Component {
   render() {
     return (
       <div>
-        <h2 style={{ paddingTop: "7%" }} className="gallery-header">
-          DRONES
-        </h2>
+        <h2 className="gallery-header">DRONES</h2>
         <div>
           {this.state.droneArray.map((picture, index) => (
             <Picture key={index} index={index} picture={picture} />

@@ -2,8 +2,15 @@
   color: #f44336;
   font-family: "Cookie", cursive;
   font-size: 3rem;
+  padding-top: 7%;
 }
 .drone__picture {
   width: 100%;
   padding-bottom: 3%;
+}
+
+@media (max-width: 450px) {
+  .gallery-header {
+    padding-top: 17%;
+  }
 }
