@@ -11,7 +11,7 @@ class GalleryPage extends Component {
   }
   render() {
     return (
-      <div style={{ paddingTop: "7%" }}>
+      <div>
         <h2 className="gallery-header">Welcome to my gallery</h2>
 
         <CarouselComp />
