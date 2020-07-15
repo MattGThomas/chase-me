@@ -1,11 +1,13 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBFooter, MDBIcon } from "mdbreact";
+import "./footer.css";
 
 const Footer = () => {
   return (
     <MDBFooter
       color="#0A0A0A"
       style={{ paddingTop: "3%", paddingBottom: "3%" }}
+      // className="footer"
     >
       <MDBContainer fluid className="text-center">
         <MDBRow style={{ justifyContent: "space-between", padding: "0 15%" }}>

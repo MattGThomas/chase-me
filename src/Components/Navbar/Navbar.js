@@ -79,7 +79,7 @@ class Navbar extends Component {
                   <NavLink to="/gallery-page">
                     <MDBDropdownItem>Gallery</MDBDropdownItem>
                   </NavLink>
-                  <NavLink to="!#">
+                  <NavLink to="/drone-page">
                     <MDBDropdownItem>Drone</MDBDropdownItem>
                   </NavLink>
                 </MDBDropdownMenu>

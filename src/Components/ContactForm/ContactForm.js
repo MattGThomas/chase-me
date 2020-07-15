@@ -34,7 +34,7 @@ class ContactForm extends Component {
   submit = (evt) => {
     evt.preventDefault();
     const { firstName, lastName, message, email, phoneNumber } = this.state;
-    Axios.post("http://localhost:3300/api/request", {
+    Axios.post("https://chase-me-backend.herokuapp.com/api/request", {
       firstName,
       lastName,
       message,

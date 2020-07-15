@@ -26,6 +26,7 @@ class CarouselComp extends Component {
         { picture: series6 },
         { picture: series7 },
       ],
+      isPaused: true,
     };
   }
 
@@ -36,35 +37,34 @@ class CarouselComp extends Component {
     });
   };
 
-  prev = (evt) => {
-    evt.preventDefault();
-    let index = this.state.curIndex;
-    let slidesLength = this.state.picturesArray.length;
-    if (index < 1) {
-      index = slidesLength;
-    }
-    --index;
-    this.setState({
-      curIndex: index,
-    });
-  };
+  // prev = (evt) => {
+  //   evt.preventDefault();
+  //   let index = this.state.curIndex;
+  //   let slidesLength = this.state.picturesArray.length;
+  //   if (index < 1) {
+  //     index = slidesLength;
+  //   }
+  //   --index;
+  //   this.setState({
+  //     curIndex: index,
+  //   });
+  // };
 
-  next = (evt) => {
-    evt.preventDefault();
-    let index = this.state.curIndex;
-    // let { slides } = this.state;
-    let slidesLength = this.state.picturesArray.length - 1;
-    if (index === slidesLength) {
-      index = -1;
-    }
-    ++index;
-    this.setState({
-      curIndex: index,
-    });
-  };
+  // next = (evt) => {
+  //   evt.preventDefault();
+  //   let index = this.state.curIndex;
+  //   // let { slides } = this.state;
+  //   let slidesLength = this.state.picturesArray.length - 1;
+  //   if (index === slidesLength) {
+  //     index = -1;
+  //   }
+  //   ++index;
+  //   this.setState({
+  //     curIndex: index,
+  //   });
+  // };
 
   transition = () => {
-    // let { curIndex } = this.state;
     if (this.state.curIndex >= 0 && this.state.curIndex < 7) {
       this.setState({ curIndex: this.state.curIndex + 1 });
     }
@@ -75,21 +75,59 @@ class CarouselComp extends Component {
 
   startTransition = () => {
     this.intervalID = setInterval(this.transition, 750);
+    this.setState({
+      isPaused: false,
+    });
   };
   stopTransition = () => {
     clearInterval(this.intervalID);
+    this.setState({
+      isPaused: true,
+    });
   };
+
+  // showButton = () => {
+  //   if (!this.intervalID) {
+  //     return <MDBIcon icon="play-circle" size="3x" color="white" />;
+  //   } else if (this.intervalID) {
+  //     return <MDBIcon icon="stop-circle" size="3x" color="white" />;
+  //   }
+  // };
+
   render() {
+    let playButtons;
+    const { isPaused } = this.state;
+    if (isPaused) {
+      playButtons = (
+        <MDBIcon
+          icon="play-circle"
+          size="3x"
+          className="carousel__play"
+          onClick={this.startTransition}
+        />
+      );
+    }
+    if (!isPaused) {
+      playButtons = (
+        <MDBIcon
+          icon="stop-circle"
+          size="3x"
+          className="carousel__play"
+          onClick={this.stopTransition}
+        />
+      );
+    }
+
     return (
       <div className="carousel-container">
         <div clasName="carousel">
-          <MDBIcon
+          {/* <MDBIcon
             icon="angle-double-left"
             // onClick={this.prev}
             onClick={this.stopTransition}
             className="carousel__arrow carousel__arrow--left"
             size="3x"
-          />
+          /> */}
           <ul className="carousel__slides">
             {this.state.picturesArray.map((picture, index) => (
               <CarouselSlide
@@ -100,24 +138,25 @@ class CarouselComp extends Component {
               />
             ))}
           </ul>
-          <MDBIcon
+          {/* <MDBIcon
             icon="angle-double-right"
             // onClick={this.next}
             onClick={this.startTransition}
             className="carousel__arrow carousel__arrow--right"
             size="3x"
-          />
+          /> */}
           <ul className="carousel__indicators">
             {this.state.picturesArray.map((picture, index) => (
               <CarouselSelector
                 key={index}
                 index={index}
                 curIndex={this.state.curIndex}
-                isCur={this.state.curIndex == index}
+                isCur={this.state.curIndex === index}
                 onClick={(e) => this.chooseSlide(index)}
               />
             ))}
           </ul>
+          {playButtons}
         </div>
       </div>
     );

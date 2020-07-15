@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import CarouselComp from "../Carousel/CarouselComp.js";
-import "./gallery.css";
+import CarouselComp from "../../Carousel/CarouselComp.js";
+import "../gallery.css";
 class GalleryPage extends Component {
   constructor(props) {
     super(props);
