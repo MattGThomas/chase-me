@@ -41,7 +41,9 @@ const About = (props) => {
               <br />
               - Photography – wedding, senior photos, family portraits, etc…
               <br />
-              <br />- Videography – events, <strong>drone footage</strong>,
+              <br />- Videography – events, <strong target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/channel/UCDRkpkT0F62mWB8Jpn89I-g">drone footage</strong>,
               music videos, sketches and shorts, etc…
               <br />
               <br />
