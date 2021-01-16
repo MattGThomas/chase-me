@@ -74,7 +74,7 @@ class CarouselComp extends Component {
   };
 
   startTransition = () => {
-    this.intervalID = setInterval(this.transition, 750);
+    this.intervalID = setInterval(this.transition, 300);
     this.setState({
       isPaused: false,
     });

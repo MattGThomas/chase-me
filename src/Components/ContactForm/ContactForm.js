@@ -23,6 +23,7 @@ class ContactForm extends Component {
       phoneNumber: "",
       message: "",
       email: "",
+      isSubmitted: false,
     };
   }
   change = (evt) => {
@@ -49,6 +50,7 @@ class ContactForm extends Component {
           email: "",
           phoneNumber: "",
           message: "",
+          isSubmitted: true,
         });
       })
       .catch((err) => {
@@ -56,6 +58,13 @@ class ContactForm extends Component {
       });
   };
   render() {
+    let submitMessage;
+    const { isSubmitted } = this.state;
+    if (isSubmitted) {
+      submitMessage = (
+        <p>Thank you for your submission, I will reach out to you shortly!</p>
+      );
+    }
     const { firstName, lastName, email, phoneNumber, message } = this.state;
     return (
       <div className="contact-heading">
@@ -64,16 +73,6 @@ class ContactForm extends Component {
           <p className="text-center">
             Send me a message, let me know what you are looking for and lets
             bring your dream to life
-            {/* <strong> */}
-            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque{" "}
-            <br />
-            lectus enim, efficitur ac finibus hendrerit, elementum quis leo.
-            <br />
-            Proin convallis ornare tortor. Vestibulum aliquet libero sed */}
-            {/* if you're looking for some work video blah blah blah <br />
-                or some pictures for graduation, weddings, etc...
-                <br /> shoot us a message and we will get right back to you */}
-            {/* </strong> */}
           </p>
         </div>
         <MDBContainer>
@@ -92,6 +91,7 @@ class ContactForm extends Component {
                   style={{ padding: "2%", background: "fffff0", width: "100%" }}
                 >
                   <MDBCardBody>
+                    {submitMessage}
                     <form onSubmit={this.submit}>
                       <MDBRow md="4">
                         <MDBCol>
@@ -109,11 +109,11 @@ class ContactForm extends Component {
 
                         <MDBCol>
                           <MDBInput
-                            label="Phone Number"
-                            id="phoneNumber"
-                            name="phoneNumber"
-                            value={phoneNumber}
-                            type="tel"
+                            label="Last Name"
+                            id="lastName"
+                            name="lastName"
+                            value={lastName}
+                            type="text"
                             onChange={this.change}
                           />
                         </MDBCol>
@@ -134,14 +134,15 @@ class ContactForm extends Component {
 
                         <MDBCol>
                           <MDBInput
-                            label="Last Name"
-                            id="lastName"
-                            name="lastName"
-                            value={lastName}
-                            type="text"
+                            label="Phone Number"
+                            id="phoneNumber"
+                            name="phoneNumber"
+                            value={phoneNumber}
+                            type="tel"
                             onChange={this.change}
                           />
                         </MDBCol>
+                        
                       </MDBRow>
 
                       <MDBInput
