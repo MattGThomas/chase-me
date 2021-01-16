@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { MDBRow, MDBCol, MDBContainer, MDBBtn } from "mdbreact";
 
 import topview from "../../images/reg-pics/topview.jpeg";
-import b_raster from "../../images/reg-pics/black raster.png";
 import w_raster from "../../images/reg-pics/white raster.png";
 import YouTube from "react-youtube";
 import Roll from "react-reveal/Roll";

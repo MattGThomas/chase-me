@@ -41,7 +41,7 @@ const About = (props) => {
               <br />
               - Photography – wedding, senior photos, family portraits, etc…
               <br />
-              <br />- Videography – events, <strong><a target="_blank"
+              <br />- Videography – events, <strong><a style={{color: 'grey'}} target="_blank"
             rel="noopener noreferrer"
             href="https://www.youtube.com/channel/UCDRkpkT0F62mWB8Jpn89I-g"drone> footage</a></strong>,
               music videos, sketches and shorts, etc…
@@ -83,7 +83,7 @@ const About = (props) => {
               <br />
               These days I am pursuing my Master’s in Multimedia Videography at
               Wichita State, while also teaching Public Speaking there as well.
-              However, in my spare I enjoy a variety of activities including
+              However, in my spare time I enjoy a variety of activities including
               working out, anime, watching movies, and capturing candid moments
               with my camera. It’s my own personal interests that drove me to
               start passion projects like{" "}
