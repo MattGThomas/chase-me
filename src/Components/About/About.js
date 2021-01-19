@@ -11,16 +11,6 @@ const About = (props) => {
       <MDBContainer style={{ fontSize: "1.2rem", color: "#bfbfbf" }}>
         <h2 className="about-header">Meet the Man Behind The Camera</h2>
         <MDBRow className="about-content">
-          {/* <h2>Meet the man behind the camera</h2> */}
-          {/* <MDBCol> */}
-          {/* <img
-              src={drone_chase}
-              alt="Chase with drone pic"
-              width="80%"
-              //   height="80%"
-              style={{ paddingBottom: "10%" }}
-            /> */}
-          {/* <div style={{ marginRight: "3%" }}> */}
           <MDBCol>
             <div className="about-pics text-right">
               <img
@@ -30,8 +20,6 @@ const About = (props) => {
                 height="300px"
                 style={{ paddingBottom: "4%" }}
               />
-              {/* </div> */}
-              {/* <img src="https://placedog.net/800/640?id=3" alt="" width="80%" /> */}
             </div>
           </MDBCol>
           <MDBCol>
@@ -58,9 +46,7 @@ const About = (props) => {
             </div>
           </MDBCol>
 
-          {/* </MDBCol> */}
           <div className="text-left">
-            {/* <strong> */}
             <p className="about-para">
               <span className=" new-about-header">Create to Innovate!</span>
               <br />
@@ -95,15 +81,8 @@ const About = (props) => {
               <br />
               Let’s chase and catch the perfect moment together!
             </p>
-            {/* </strong> */}
           </div>
         </MDBRow>
-        {/* <MDBRow>
-          <p>
-            Insert pictures of some favorite topics here? banner style, slides
-            across screen
-          </p>
-        </MDBRow> */}
       </MDBContainer>
     </div>
   );

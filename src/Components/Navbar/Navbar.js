@@ -27,6 +27,11 @@ class Navbar extends Component {
       isOpen: !this.state.isOpen,
     });
   };
+  closeNav = () => {
+    this.setState({
+      isOpen: false,
+    });
+  };
   render() {
     return (
       <MDBNavbar color="red" light expand="md" scrolling fixed="top">
@@ -56,7 +61,7 @@ class Navbar extends Component {
                 <strong>Home</strong>
               </MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem>
+            <MDBNavItem onClick={this.closeNav}>
               <MDBNavLink
                 to="/about"
                 style={{ color: "black" }}
@@ -65,7 +70,7 @@ class Navbar extends Component {
                 About
               </MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem>
+            <MDBNavItem onClick={this.closeNav}>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
                   <span className="mr-2 nav-items" style={{ color: "black" }}>
@@ -85,7 +90,7 @@ class Navbar extends Component {
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
-            <MDBNavItem>
+            <MDBNavItem onClick={this.closeNav}>
               <MDBNavLink
                 to="/contact-us"
                 style={{ color: "black" }}
@@ -98,7 +103,7 @@ class Navbar extends Component {
           </MDBNavbarNav>
 
           <MDBNavbarNav right>
-            <MDBNavItem>
+            <MDBNavItem onClick={this.closeNav}>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -113,7 +118,7 @@ class Navbar extends Component {
                 />
               </a>
             </MDBNavItem>
-            <MDBNavItem>
+            <MDBNavItem onClick={this.closeNav}>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -128,7 +133,7 @@ class Navbar extends Component {
                 />
               </a>
             </MDBNavItem>
-            <MDBNavItem>
+            <MDBNavItem onClick={this.closeNav}>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -143,7 +148,7 @@ class Navbar extends Component {
                 />
               </a>
             </MDBNavItem>
-            <MDBNavItem>
+            <MDBNavItem onClick={this.closeNav}>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
